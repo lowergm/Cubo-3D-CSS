@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  background: #000;
+  background-color: #000;
   height: 100vh;
   display: grid;
   place-items: center;
