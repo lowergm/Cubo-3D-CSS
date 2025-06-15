@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  background: #810;
+  background: #000;
   height: 100vh;
   display: grid;
   place-items: center;
@@ -30,7 +30,7 @@ body {
   width: 200px;
   height: 200px;
   opacity: 0.9;
-  background: linear-gradient(to right, #091, #000);
+  background: linear-gradient(to right, #091 26%, #000 80%);
 }
 
 #l1 {
