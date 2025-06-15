@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #810;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  perspective‌: 1000px;
+  perspective-origin: 100% 100%;
+}
+
+.cube{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 6s linear infinite;
+}
+
+.cube > div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.9;
+  background: linear-gradient(to right, #091, #000);
+}
+
+#l1 {
+  transform: translateZ(100px);
+}
+
+#l2 {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+#l3 {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+#l4 {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+#l5 {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+#l6 {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
