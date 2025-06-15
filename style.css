@@ -30,7 +30,7 @@ body {
   width: 200px;
   height: 200px;
   opacity: 0.9;
-  background: linear-gradient(to right, #091 26%, #000 80%);
+  background: linear-gradient(to right, #091, #000);
 }
 
 #l1 {
